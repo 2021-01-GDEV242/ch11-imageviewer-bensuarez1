@@ -1,7 +1,7 @@
 import java.awt.Color;
 
 /**
- * Write a description of class PixalizeFilter here.
+ * This class creates the pixalize filter that can be applied to any selected image.
  *
  * @author Ben Suarez
  * @version 04-19-2021 v1.0

@@ -1,7 +1,8 @@
 import java.awt.Color;
 
 /**
- * Write a description of class BlurFilter here.
+ * This class creates the blur filter that can be applied to any selected image.
+ * A lot more coding needed for the bluriness aspect compared to other filters.
  *
  * @author Ben Suarez
  * @version 04-19-2021 v1.0
