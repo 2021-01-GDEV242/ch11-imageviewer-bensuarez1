@@ -16,8 +16,8 @@ import java.util.Iterator;
  * 
  * To start the application, create an object of this class.
  * 
- * @author Michael Kölling and David J. Barnes.
- * @version 4.0
+ * @author Ben Suarez
+ * @version 04-19-2021 v4.0
  */
 public class ImageViewer
 {

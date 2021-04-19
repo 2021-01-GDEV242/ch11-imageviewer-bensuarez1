@@ -3,8 +3,8 @@
  * application. Filters can be applied to OFImages by invoking the apply 
  * method.
  * 
- * @author Michael Kölling and David J. Barnes.
- * @version 1.0
+ * @author Ben Suarez
+ * @version 04-19-2021 v1.0
  */
 public abstract class Filter
 {

@@ -3,8 +3,8 @@ import java.awt.Color;
 /**
  * An three-level gray-based threshold filter.
  * 
- * @author Michael Kölling and David J. Barnes.
- * @version 1.0
+ * @author Ben Suarez
+ * @version 04-19-2021 v1.0
  */
 public class ThresholdFilter extends Filter
 {
