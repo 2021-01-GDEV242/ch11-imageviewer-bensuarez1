@@ -2,10 +2,10 @@ import java.awt.Color;
 
 
 /**
- * Write a description of class SolarizeFilter here.
+ * This class creates the solarize filter that can be applied to any selected image.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Ben Suarez
+ * @version 04-19-2021 v1.0
  */
 public class SolarizeFilter extends Filter
 {
