@@ -1,16 +1,17 @@
+import java.awt.Color;
+
 /**
- * An image filter to make the image a bit lighter.
- * 
+ * This class creates the invert filter that can be applied to any selected image.
+ *
  * @author Ben Suarez
  * @version 04-19-2021 v1.0
  */
-public class LighterFilter extends Filter
+public class InvertFilter extends Filter
 {
     /**
-     * Constructor for objects of class LighterFilter.
-     * @param name The name of the filter.
+     * Constructor for objects of class InvertFilter
      */
-    public LighterFilter(String name)
+    public InvertFilter(String name)
     {
         super(name);
     }
@@ -26,9 +27,9 @@ public class LighterFilter extends Filter
         int width = image.getWidth();
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
-                image.setPixel(x, y, image.getPixel(x, y).brighter());
+                Color pixel = image.getPixel(x, y);
+                image.setPixel(x, y, new Color(255 - pixel.getRed(), 255 - pixel.getGreen(), 255 - pixel.getBlue()));
             }
         }
     }
-
 }

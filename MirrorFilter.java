@@ -1,16 +1,17 @@
+import java.awt.Color;
+
 /**
- * An image filter to make the image a bit lighter.
- * 
+ * This class creates the mirror filter that can be applied to any selected image.
+ *
  * @author Ben Suarez
  * @version 04-19-2021 v1.0
  */
-public class LighterFilter extends Filter
+public class MirrorFilter extends Filter
 {
     /**
-     * Constructor for objects of class LighterFilter.
-     * @param name The name of the filter.
+     * Constructor for objects of class MirrorFilter
      */
-    public LighterFilter(String name)
+    public MirrorFilter(String name)
     {
         super(name);
     }
@@ -26,9 +27,10 @@ public class LighterFilter extends Filter
         int width = image.getWidth();
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
-                image.setPixel(x, y, image.getPixel(x, y).brighter());
+                Color left = image.getPixel(x, y);
+                image.setPixel(x, y, image.getPixel(width-1-x, y));
+                image.setPixel(width-1-x, y, left);
             }
         }
     }
-
 }
